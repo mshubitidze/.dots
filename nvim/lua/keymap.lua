@@ -1,3 +1,5 @@
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+
 vim.keymap.set('n', '<leader>bd', '<cmd>bdelete<CR>', { desc = 'Current [B]uffer [D]elete' })
 
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
@@ -16,13 +18,6 @@ vim.keymap.set('v', '<M-j>', ":m '>+1<CR>gv=gv")
 
 vim.keymap.set('v', '>', '>gv')
 vim.keymap.set('v', '<', '<gv')
-
-vim.keymap.set('n', '<C-h>', ':<C-U>TmuxNavigateLeft<CR>')
-vim.keymap.set('n', '<C-j>', ':<C-U>TmuxNavigateDown<CR>')
-vim.keymap.set('n', '<C-k>', ':<C-U>TmuxNavigateUp<CR>')
-vim.keymap.set('n', '<C-l>', ':<C-U>TmuxNavigateRight<CR>')
-
-vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })

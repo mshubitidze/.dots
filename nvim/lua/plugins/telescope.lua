@@ -1,7 +1,7 @@
 return {
   'nvim-telescope/telescope.nvim',
   event = 'VimEnter',
-  branch = '0.1.x',
+  branch = 'master',
   dependencies = {
     'nvim-lua/plenary.nvim',
     {
@@ -19,12 +19,15 @@ return {
   },
   config = function()
     require('telescope').setup {
-      -- defaults = {
-      --   mappings = {
-      --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-      --   },
-      -- },
-      -- pickers = {}
+      defaults = {
+        mappings = {
+          i = { ['<c-enter>'] = 'to_fuzzy_refine' },
+        },
+        path_display = {
+          'filename_first',
+        },
+      },
+      pickers = {},
       extensions = {
         ['ui-select'] = {
           require('telescope.themes').get_dropdown(),
