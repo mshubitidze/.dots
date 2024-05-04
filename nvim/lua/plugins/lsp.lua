@@ -92,8 +92,9 @@ return {
       'stylua',
       'tsserver',
       'tailwindcss',
-      'prettier',
-      'eslint',
+      -- 'prettier',
+      -- 'eslint',
+      'biome',
       'emmet_language_server',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
