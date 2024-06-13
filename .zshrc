@@ -22,6 +22,8 @@ alias s="source ~/.zshrc"
 alias ave="ansible-vault encrypt"
 alias avd="ansible-vault decrypt"
 
+alias dc="docker compose"
+
 alias pn="pnpm"
 alias pnx="pnpm dlx"
 

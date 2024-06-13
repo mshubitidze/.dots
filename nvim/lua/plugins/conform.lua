@@ -22,12 +22,14 @@ return {
     end,
     formatters_by_ft = {
       lua = { 'stylua' },
-      yaml = { 'prettier' },
-      typescript = { 'prettier' },
-      typescriptreact = { 'prettier' },
+        yaml = { 'prettier' },
+        typescript = { 'prettier' },
+        typescriptreact = { 'prettier' },
       javascript = { 'prettier' },
       javascriptreact = { 'prettier' },
+      html = { 'prettier' },
+      css = { 'prettier' },
       astro = { 'prettier' },
     },
-  },
+  }
 }

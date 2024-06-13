@@ -2,7 +2,20 @@ return {
   'nvim-treesitter/nvim-treesitter',
   build = ':TSUpdate',
   opts = {
-    ensure_installed = { 'bash', 'c', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'typescript', 'javascript', 'tsx' },
+    ensure_installed = {
+      'bash',
+      'c',
+      'html',
+      'lua',
+      'luadoc',
+      'markdown',
+      'markdown_inline',
+      'vim',
+      'vimdoc',
+      'typescript',
+      'javascript',
+      'tsx',
+    },
     auto_install = true,
     highlight = {
       enable = true,
@@ -12,7 +25,6 @@ return {
   },
   config = function(_, opts)
     require('nvim-treesitter.install').prefer_git = true
-    ---@diagnostic disable-next-line: missing-fields
     require('nvim-treesitter.configs').setup(opts)
   end,
 }
