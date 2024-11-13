@@ -1,3 +1,6 @@
+set -g default-terminal "$TERM"
+set -ag terminal-overrides ",$TERM:Tc"
+
 # : << EOF
 # https://github.com/gpakosz/.tmux
 # (‑●‑●)> dual licensed under the WTFPL v2 license and the MIT license,
@@ -83,24 +86,43 @@ tmux_conf_24b_colour=auto
 #   - tmux_conf_theme_synchronized
 tmux_conf_theme=enabled
 
-# duskfox
-tmux_conf_theme_colour_1="#000000"    # dark gray
-tmux_conf_theme_colour_3="#393552"    # gray
-tmux_conf_theme_colour_3="#aeafb0"    # light gray
-tmux_conf_theme_colour_4="#4a869c"    # light blue
-tmux_conf_theme_colour_5="#e6a852"    # yellow
-tmux_conf_theme_colour_6="#000000"    # dark gray
-tmux_conf_theme_colour_7="#e0def4"    # white
-tmux_conf_theme_colour_8="#000000"    # dark gray
-tmux_conf_theme_colour_9="#e6a852"    # yellow
-tmux_conf_theme_colour_10="#a580d2"   # pink
-tmux_conf_theme_colour_11="#8aa872"   # green
-tmux_conf_theme_colour_12="#aeafb0"   # light gray
-tmux_conf_theme_colour_13="#e0def4"   # white
-tmux_conf_theme_colour_14="#000000"   # dark gray
-tmux_conf_theme_colour_15="#000000"   # dark gray
-tmux_conf_theme_colour_16="#f083a2"   # red
-tmux_conf_theme_colour_17="#e0def4"   # white
+# catppuccin mocha
+tmux_conf_theme_colour_1="#171717"    # dark gray
+tmux_conf_theme_colour_2="#313244"    # gray
+tmux_conf_theme_colour_3="#6c7086"    # light gray
+tmux_conf_theme_colour_4="#89b4fa"    # light blue
+tmux_conf_theme_colour_5="#f9e2af"    # yellow
+tmux_conf_theme_colour_6="#171717"    # dark gray
+tmux_conf_theme_colour_7="#171717"    # white
+tmux_conf_theme_colour_8="#171717"    # dark gray
+tmux_conf_theme_colour_9="#f9e2af"    # yellow
+tmux_conf_theme_colour_10="#f38ba8"   # pink
+tmux_conf_theme_colour_11="#a6e3a1"   # green
+tmux_conf_theme_colour_12="#6c7086"   # light gray
+tmux_conf_theme_colour_13="#171717"   # white
+tmux_conf_theme_colour_14="#171717"   # dark gray
+tmux_conf_theme_colour_15="#171717"   # dark gray
+tmux_conf_theme_colour_16="#f38ba8"   # red
+tmux_conf_theme_colour_17="#cdd6f4"   # white
+
+# # duskfox
+# tmux_conf_theme_colour_1="#000000"    # dark gray
+# tmux_conf_theme_colour_3="#393552"    # gray
+# tmux_conf_theme_colour_3="#aeafb0"    # light gray
+# tmux_conf_theme_colour_4="#4a869c"    # light blue
+# tmux_conf_theme_colour_5="#e6a852"    # yellow
+# tmux_conf_theme_colour_6="#000000"    # dark gray
+# tmux_conf_theme_colour_7="#e0def4"    # white
+# tmux_conf_theme_colour_8="#000000"    # dark gray
+# tmux_conf_theme_colour_9="#e6a852"    # yellow
+# tmux_conf_theme_colour_10="#a580d2"   # pink
+# tmux_conf_theme_colour_11="#8aa872"   # green
+# tmux_conf_theme_colour_12="#aeafb0"   # light gray
+# tmux_conf_theme_colour_13="#e0def4"   # white
+# tmux_conf_theme_colour_14="#000000"   # dark gray
+# tmux_conf_theme_colour_15="#000000"   # dark gray
+# tmux_conf_theme_colour_16="#f083a2"   # red
+# tmux_conf_theme_colour_17="#e0def4"   # white
 
 # # nightfox
 # tmux_conf_theme_colour_1="#192330"    # dark gray

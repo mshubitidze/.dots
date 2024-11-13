@@ -1,3 +1,6 @@
+[core]
+	editor = nvim
+	pager = delta
 [user]
 	name = Misho Shubitidze
 	email = misho@mshub.dev

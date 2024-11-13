@@ -1,15 +1,20 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-plugins=(
-	git
-	zsh-syntax-highlighting
-	zsh-autosuggestions
-	zsh-vi-mode
-)
+export MANPAGER="nvim +Man!"
+export MANWIDTH=999
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# ZSH_THEME="refined"
+
+# plugins=(
+# 	zsh-syntax-highlighting
+# 	zsh-autosuggestions
+# 	zsh-vi-mode
+# )
+
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 source $ZSH/oh-my-zsh.sh
+
+export COREPACK_ENABLE_AUTO_PIN=0
 
 export EDITOR="nvim"
 
@@ -24,6 +29,8 @@ alias avd="ansible-vault decrypt"
 
 alias dc="docker compose"
 
+alias n="npm"
+alias nx="npx"
 alias pn="pnpm"
 alias pnx="pnpm dlx"
 
@@ -42,7 +49,6 @@ alias gb="git branch"
 alias gba="git branch -a"
 alias gm="git merge"
 alias gma="git merge --abort"
-alias gcoa="git checkout -"
 alias glog="git log --oneline --decorate --graph"
 
 alias ld="eza -lD"
@@ -52,14 +58,37 @@ alias ll="eza -al --group-directories-first"
 alias ls="eza -alf --color=always --sort=size | grep -v /"
 alias lt="eza -al --sort=modified"
 
+function create_repo() {
+    gh repo create "$2" --public --source="$1" --remote=origin --push
+}
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
 eval "$(zoxide init zsh)"
-eval "$(starship init zsh)"
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# bun completions
 [ -s "/Users/m/.bun/_bun" ] && source "/Users/m/.bun/_bun"
 
+# bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+eval "$(starship init zsh)"
+. "/Users/m/.deno/env"
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+source <(fzf --zsh)
+
+. "$HOME/.cargo/env"
