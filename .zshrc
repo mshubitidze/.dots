@@ -50,6 +50,8 @@ alias gba="git branch -a"
 alias gm="git merge"
 alias gma="git merge --abort"
 alias glog="git log --oneline --decorate --graph"
+alias gsw="git switch"
+alias gfp="git fetch --prune --all"
 
 alias ld="eza -lD"
 alias lf="eza -lf --color=always | grep -v /"
