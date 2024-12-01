@@ -60,7 +60,7 @@ alias ll="eza -al --group-directories-first"
 alias ls="eza -alf --color=always --sort=size | grep -v /"
 alias lt="eza -al --sort=modified"
 
-alias taoc="touch in.txt && test.txt && main.py"
+alias taoc="touch in.txt && touch test.txt && touch main.py"
 alias aoc="python3 main.py < in.txt"
 alias aot="python3 main.py < test.txt"
 
