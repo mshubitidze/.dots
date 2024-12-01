@@ -2,7 +2,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 export MANPAGER="nvim +Man!"
 export MANWIDTH=999
-
+source ~/.anthropic_api_key
 # ZSH_THEME="refined"
 
 # plugins=(
@@ -60,6 +60,10 @@ alias ll="eza -al --group-directories-first"
 alias ls="eza -alf --color=always --sort=size | grep -v /"
 alias lt="eza -al --sort=modified"
 
+alias taoc="touch in.txt && test.txt && main.py"
+alias aoc="python3 main.py < in.txt"
+alias aot="python3 main.py < test.txt"
+
 function create_repo() {
     gh repo create "$2" --public --source="$1" --remote=origin --push
 }
@@ -94,3 +98,11 @@ source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 source <(fzf --zsh)
 
 . "$HOME/.cargo/env"
+
+# pnpm
+export PNPM_HOME="/Users/m/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
