@@ -1,0 +1,4 @@
+font-family = GeistMono Nerd Font Mono
+font-size = 24
+theme = catppuccin-mocha
+macos-titlebar-style = hidden

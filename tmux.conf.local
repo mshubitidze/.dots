@@ -87,21 +87,21 @@ tmux_conf_24b_colour=auto
 tmux_conf_theme=enabled
 
 # catppuccin mocha
-tmux_conf_theme_colour_1="#171717"    # dark gray
+tmux_conf_theme_colour_1="#181825"    # dark gray
 tmux_conf_theme_colour_2="#313244"    # gray
 tmux_conf_theme_colour_3="#6c7086"    # light gray
 tmux_conf_theme_colour_4="#89b4fa"    # light blue
 tmux_conf_theme_colour_5="#f9e2af"    # yellow
-tmux_conf_theme_colour_6="#171717"    # dark gray
-tmux_conf_theme_colour_7="#171717"    # white
-tmux_conf_theme_colour_8="#171717"    # dark gray
+tmux_conf_theme_colour_6="#181825"    # dark gray
+tmux_conf_theme_colour_7="#181825"    # white
+tmux_conf_theme_colour_8="#181825"    # dark gray
 tmux_conf_theme_colour_9="#f9e2af"    # yellow
 tmux_conf_theme_colour_10="#f38ba8"   # pink
 tmux_conf_theme_colour_11="#a6e3a1"   # green
 tmux_conf_theme_colour_12="#6c7086"   # light gray
-tmux_conf_theme_colour_13="#171717"   # white
-tmux_conf_theme_colour_14="#171717"   # dark gray
-tmux_conf_theme_colour_15="#171717"   # dark gray
+tmux_conf_theme_colour_13="#181825"   # white
+tmux_conf_theme_colour_14="#181825"   # dark gray
+tmux_conf_theme_colour_15="#181825"   # dark gray
 tmux_conf_theme_colour_16="#f38ba8"   # red
 tmux_conf_theme_colour_17="#cdd6f4"   # white
 

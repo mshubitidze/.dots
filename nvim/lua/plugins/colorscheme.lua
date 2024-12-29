@@ -9,11 +9,11 @@ return {
           latte = {},
           frappe = {},
           macchiato = {},
-          mocha = {
-            base = '#171717',
-            mantle = '#171717',
-            crust = '#171717',
-          },
+          -- mocha = {
+          --   base = '#171717',
+          --   mantle = '#171717',
+          --   crust = '#171717',
+          -- },
         },
       }
       vim.cmd.colorscheme 'catppuccin-mocha'
