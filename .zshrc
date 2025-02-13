@@ -18,7 +18,7 @@ export COREPACK_ENABLE_AUTO_PIN=0
 
 export EDITOR="nvim"
 
-alias cat="bat --theme=TwoDark"
+alias cat="bat"
 
 alias v="nvim"
 alias c="clear"
@@ -91,6 +91,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 eval "$(starship init zsh)"
 . "/Users/m/.deno/env"
+
+source ~/.dotfiles/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
