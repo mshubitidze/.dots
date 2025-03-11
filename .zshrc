@@ -64,6 +64,8 @@ alias taoc="touch in.txt && touch test.txt && touch main.py"
 alias aoc="python3 main.py < in.txt"
 alias aot="python3 main.py < test.txt"
 
+alias lg=lazygit --use-config-file="/Users/m/Library/Application Support/lazygit/config.yml,/Users/m/Library/Application Support/lazygit/catppuccin-mocha.yml"
+
 function create_repo() {
     gh repo create "$2" --public --source="$1" --remote=origin --push
 }
