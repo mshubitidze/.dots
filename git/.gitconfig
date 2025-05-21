@@ -14,5 +14,6 @@
 [delta]
   navigate = true
 	features = catppuccin-mocha
+	; features = catppuccin-latte
 [merge]
   conflictstyle = zdiff3

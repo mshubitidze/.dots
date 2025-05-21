@@ -37,7 +37,7 @@ alias pnx="pnpm dlx"
 alias ta="tmux attach"
 alias tls="tmux ls"
 
-alias gs="git status"
+alias gst="git status"
 alias ga="git add"
 alias gc="git commit"
 alias gp="git push"
@@ -110,3 +110,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# Added by Windsurf
+export PATH="/Users/m/.codeium/windsurf/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
