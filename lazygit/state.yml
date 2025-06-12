@@ -1,0 +1,20 @@
+lastupdatecheck: 0
+recentrepos:
+    - /Users/m/.dotfiles
+    - /Users/m/p/travlrd/persuva
+    - /Users/m/p/award-nominees
+    - /Users/m/p/travlrd/persuva-theme-dev
+    - /Users/m/p/travlrd/mobile-budget-buddy
+    - /Users/m/p/travlrd/ticket-shop-back-office
+    - /Users/m/p/travlrd/evnord-theme
+startuppopupversion: 5
+lastversion: 0.52.0
+customcommandshistory: []
+hidecommandlog: false
+ignorewhitespaceindiffview: false
+diffcontextsize: 3
+renamesimilaritythreshold: 50
+localbranchsortorder: recency
+remotebranchsortorder: alphabetical
+gitlogorder: topo-order
+gitlogshowgraph: always

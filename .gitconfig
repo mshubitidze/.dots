@@ -1,0 +1,25 @@
+[include]
+	path = /Users/m/.config/delta/themes/catppuccin.gitconfig
+
+[user]
+	name = Misho Shubitidze
+	email = misho@mshub.dev
+	username = mshubitidze
+
+[init]
+	defaultBranch = main
+
+[core]
+  editor = nvim
+  pager = delta
+
+[interactive]
+  diffFilter = delta --color-only --paging=never
+
+[delta]
+  navigate = true
+  dark = true
+  features = catppuccin-mocha
+
+[merge]
+  conflictstyle = zdiff3

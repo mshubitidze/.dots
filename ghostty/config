@@ -1,3 +1,6 @@
+shell-integration = fish
+clipboard-read = allow
+clipboard-write = allow
 font-family = GeistMono Nerd Font Mono
 font-size = 14
 theme = catppuccin-mocha

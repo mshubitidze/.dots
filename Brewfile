@@ -1,102 +1,89 @@
-tap "caarlos0/tap"
 tap "felixkratz/formulae"
-tap "homebrew/bundle"
-tap "homebrew/services"
-tap "jnsahaj/lumen"
-tap "jorgerojas26/lazysql"
-tap "libsql/sqld"
+tap "jesseduffield/lazygit"
 tap "nikitabobko/tap"
 tap "shopify/shopify"
-tap "sst/tap"
 tap "supabase/tap"
-tap "tursodatabase/tap"
-brew "ansible"
-brew "ast-grep"
-brew "autoconf"
-brew "autoconf-archive"
-brew "automake"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-brew "btop"
-brew "glib"
-brew "cairo"
-brew "ccache"
-brew "cmake"
+# Modern, maintained replacement for ls
 brew "eza"
+# Simple, fast and user-friendly alternative to find
 brew "fd"
-brew "harfbuzz"
-brew "python@3.12"
+# Play, record, convert, and stream audio and video
 brew "ffmpeg"
-brew "ffmpegthumbnailer"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# Command-line fuzzy finder written in Go
 brew "fzf"
-brew "gcc"
-brew "gh"
-brew "ghostscript"
+# Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for git and diff output
 brew "git-delta"
-brew "httpie"
-brew "imagemagick"
-brew "jq"
-brew "lazygit"
-brew "make"
-brew "mkcert"
-brew "nasm"
-brew "neofetch"
-brew "neonctl"
+# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-brew "ninja"
-brew "pipx"
-brew "pkgconf"
-brew "poetry"
-brew "poppler"
-brew "postgresql@17"
-brew "pypy3.10"
+# Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
+# Search tool like grep and The Silver Searcher
 brew "ripgrep"
-brew "sevenzip"
+# Cross-shell prompt for astronauts
 brew "starship"
-brew "tig"
+# Terminal multiplexer
 brew "tmux"
-brew "unzip"
-brew "wget"
-brew "yarn"
-brew "yazi"
+# Program that allows you to count code, quickly
+brew "tokei"
+# Command-line interface for Vercel
+brew "vercel-cli"
+# Shell extension to navigate your filesystem faster
 brew "zoxide"
-brew "zsh"
-brew "zsh-autosuggestions"
-brew "zsh-syntax-highlighting"
-brew "zsh-vi-mode"
-brew "caarlos0/tap/timer"
+# A window border system for macOS
 brew "felixkratz/formulae/borders"
+# Custom macOS statusbar with shell plugin, interaction and graph support
 brew "felixkratz/formulae/sketchybar"
-brew "jnsahaj/lumen/lumen"
-brew "jorgerojas26/lazysql/lazysql"
+# A simple terminal UI for git commands, written in Go
+brew "jesseduffield/lazygit/lazygit"
+# A CLI tool to build for the Shopify platform
 brew "shopify/shopify/shopify-cli"
-brew "sst/tap/opencode"
+# Supabase CLI
 brew "supabase/tap/supabase"
-brew "tursodatabase/tap/turso"
+# AeroSpace is an i3-like tiling window manager for macOS
 cask "aerospace"
-cask "alacritty"
-cask "arc"
-cask "devtoys"
-cask "discord"
+# Manage team projects and tasks
+cask "asana"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
+# Anthropic's official Claude AI desktop app
+cask "claude"
+# Write, edit, and chat about your code with AI
+cask "cursor"
+# App to build and share containerised applications and microservices
 cask "docker"
+# Collaborative team software
 cask "figma"
-cask "font-commit-mono-nerd-font"
-cask "font-firago"
 cask "font-geist-mono-nerd-font"
-cask "font-hack-nerd-font"
-cask "font-jetbrains-mono-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Web browser
 cask "google-chrome"
-cask "hammerspoon"
-cask "keyboardcleantool"
-cask "keycastr"
-cask "ngrok"
-cask "orbstack"
+# App to write, plan, collaborate, and get organised
+cask "notion"
+# Control your tools with a few keystrokes
 cask "raycast"
-cask "spotify"
+# Team communication and collaboration software
+cask "slack"
+# Messaging app with a focus on speed and security
 cask "telegram"
-cask "visual-studio-code@insiders"
+# Native desktop client for WhatsApp
 cask "whatsapp"
-cask "zed@preview"
-cask "zoom"
+vscode "bradlc.vscode-tailwindcss"
+vscode "catppuccin.catppuccin-vsc"
+vscode "catppuccin.catppuccin-vsc-icons"
+vscode "coderabbit.coderabbit-vscode"
+vscode "denoland.vscode-deno"
+vscode "esbenp.prettier-vscode"
+vscode "graphql.vscode-graphql"
+vscode "graphql.vscode-graphql-syntax"
+vscode "killalau.vscode-liquid-snippets"
+vscode "shopify.polaris-for-vscode"
+vscode "shopify.theme-check-vscode"
+vscode "shopify.vscode-shopify-dev-assistant"
 vscode "vscodevim.vim"

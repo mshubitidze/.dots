@@ -23,10 +23,10 @@ return {
       { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
     },
   },
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      inlay_hints = { enabled = false },
-    },
-  },
+  -- {
+  --   "neovim/nvim-lspconfig",
+  --   opts = {
+  --     inlay_hints = { enabled = false },
+  --   },
+  -- },
 }
