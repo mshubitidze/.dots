@@ -38,6 +38,10 @@ alias glog="git log --oneline --decorate --graph"
 alias gsw="git switch"
 alias gfp="git fetch --prune --all"
 
+bind yy fish_clipboard_copy
+bind Y fish_clipboard_copy
+bind p fish_clipboard_paste
+
 zoxide init fish | source
 starship init fish | source
 
