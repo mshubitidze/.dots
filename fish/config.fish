@@ -5,6 +5,7 @@ set -gx EDITOR nvim
 set -gx MANPAGER 'nvim +Man!'
 
 set -gx PATH /opt/homebrew/bin $PATH
+set -gx PATH /opt/homebrew/opt/postgresql@15/bin $PATH
 
 alias v="nvim"
 alias c="clear"
@@ -48,3 +49,9 @@ starship init fish | source
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+string match -q "$TERM_PROGRAM" kiro and . (kiro --locate-shell-integration-path fish)
+
+# Added by Windsurf
+fish_add_path /Users/m/.codeium/windsurf/bin
+fish_add_path $HOME/.local/bin

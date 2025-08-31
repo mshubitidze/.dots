@@ -2,6 +2,7 @@ tap "felixkratz/formulae"
 tap "jesseduffield/lazygit"
 tap "nikitabobko/tap"
 tap "shopify/shopify"
+tap "sst/tap"
 tap "supabase/tap"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
@@ -19,8 +20,14 @@ brew "fzf"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Utility to optimize JPEG files
+brew "jpegoptim"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# PNG image optimizing utility
+brew "pngquant"
 # Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
 # Search tool like grep and The Silver Searcher
@@ -43,6 +50,8 @@ brew "felixkratz/formulae/sketchybar"
 brew "jesseduffield/lazygit/lazygit"
 # A CLI tool to build for the Shopify platform
 brew "shopify/shopify/shopify-cli"
+# The AI coding agent built for the terminal.
+brew "sst/tap/opencode"
 # Supabase CLI
 brew "supabase/tap/supabase"
 # AeroSpace is an i3-like tiling window manager for macOS
@@ -72,12 +81,17 @@ cask "raycast"
 cask "slack"
 # Messaging app with a focus on speed and security
 cask "telegram"
+# Web browser with built-in email client focusing on customization and control
+cask "vivaldi"
 # Native desktop client for WhatsApp
 cask "whatsapp"
+# Multiplayer code editor
+cask "zed@preview"
 vscode "bradlc.vscode-tailwindcss"
 vscode "catppuccin.catppuccin-vsc"
 vscode "catppuccin.catppuccin-vsc-icons"
 vscode "coderabbit.coderabbit-vscode"
+vscode "dbaeumer.vscode-eslint"
 vscode "denoland.vscode-deno"
 vscode "esbenp.prettier-vscode"
 vscode "graphql.vscode-graphql"
@@ -86,4 +100,6 @@ vscode "killalau.vscode-liquid-snippets"
 vscode "shopify.polaris-for-vscode"
 vscode "shopify.theme-check-vscode"
 vscode "shopify.vscode-shopify-dev-assistant"
+vscode "usernamehw.errorlens"
 vscode "vscodevim.vim"
+vscode "yoavbls.pretty-ts-errors"
