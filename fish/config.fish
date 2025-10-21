@@ -38,6 +38,18 @@ alias gma="git merge --abort"
 alias glog="git log --oneline --decorate --graph"
 alias gsw="git switch"
 alias gfp="git fetch --prune --all"
+alias gpl="git pull"
+alias gplr="git pull --rebase"
+alias grb="git rebase"
+alias grbi="git rebase -i"
+alias grs="git reset"
+alias grsh="git reset --hard"
+alias gss="git stash"
+alias gssp="git stash pop"
+alias gssl="git stash list"
+alias gcm="git commit -m"
+alias gcam="git commit -am"
+alias gundo="git reset --soft HEAD~1"
 
 bind yy fish_clipboard_copy
 bind Y fish_clipboard_copy
@@ -54,4 +66,16 @@ string match -q "$TERM_PROGRAM" kiro and . (kiro --locate-shell-integration-path
 
 # Added by Windsurf
 fish_add_path /Users/m/.codeium/windsurf/bin
+fish_add_path $HOME/.local/bin
+
+# pnpm
+set -gx PNPM_HOME /Users/m/Library/pnpm
+if not string match -q -- $PNPM_HOME $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 fish_add_path $HOME/.local/bin
